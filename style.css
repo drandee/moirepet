@@ -64,8 +64,9 @@ body {
 }
 
 .logo-text {
+    font-family: 'Poppins', sans-serif;
     font-size: 1.5rem;
-    font-weight: 700;
+    font-weight: 800;
     color: var(--text-color);
     background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     -webkit-background-clip: text;
@@ -246,6 +247,7 @@ body {
 }
 
 .hero-title {
+    font-family: 'Poppins', sans-serif;
     font-size: 4.5rem;
     font-weight: 800;
     margin-bottom: 1rem;

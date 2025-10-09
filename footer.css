@@ -16,8 +16,8 @@ footer {
 }
 
 .footer-logo {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background: var(--background-light);
     display: flex;
@@ -34,8 +34,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     object-fit: contain;
     filter: none;
     transition: filter 0.3s ease;
@@ -52,8 +52,8 @@ footer {
 }
 
 .social-link {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: var(--background-light);
     border-radius: 50%;
     display: flex;
@@ -71,8 +71,8 @@ footer {
 }
 
 .social-link img {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     filter: none;
     transition: filter 0.3s ease;
 }
@@ -89,23 +89,23 @@ footer {
     }
     
     .footer-logo {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
     
     .footer-logo img {
-        width: 32px;
-        height: 32px;
+        width: 26px;
+        height: 26px;
     }
     
     .social-link {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
     }
     
     .social-link img {
-        width: 20px;
-        height: 20px;
+        width: 18px;
+        height: 18px;
     }
 }
 
@@ -120,22 +120,22 @@ footer {
     }
     
     .footer-logo {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
     
     .footer-logo img {
-        width: 28px;
-        height: 28px;
+        width: 22px;
+        height: 22px;
     }
     
     .social-link {
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
     }
     
     .social-link img {
-        width: 18px;
-        height: 18px;
+        width: 16px;
+        height: 16px;
     }
 }
