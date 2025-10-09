@@ -50,11 +50,28 @@ body {
     align-items: center;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
 .logo img {
     height: 70px;
     width: auto;
     transition: transform 0.3s ease;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: -0.5px;
 }
 
 .logo img:hover {
@@ -226,6 +243,31 @@ body {
     flex: 1;
     text-align: left;
     max-width: 600px;
+}
+
+.hero-brand {
+    margin-bottom: 2rem;
+}
+
+.hero-brand-text {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.hero-brand-tagline {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 500;
+    opacity: 0.8;
 }
 
 .hero h1 {
@@ -720,6 +762,14 @@ footer {
         text-align: center;
         max-width: 100%;
     }
+    
+    .hero-brand-text {
+        font-size: 1rem;
+    }
+    
+    .hero-brand-tagline {
+        font-size: 0.9rem;
+    }
 
     .hero-buttons {
         justify-content: center;
@@ -856,7 +906,19 @@ footer {
     }
     
     .logo img {
-        height: 50px;
+        height: 45px;
+    }
+    
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .hero-brand-text {
+        font-size: 0.9rem;
+    }
+    
+    .hero-brand-tagline {
+        font-size: 0.85rem;
     }
     
     .subjects-grid, .tutors-grid {
