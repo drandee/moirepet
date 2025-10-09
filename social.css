@@ -1,0 +1,54 @@
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-link:not(.disabled):hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.social-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.social-link:not(.disabled):hover .social-icon {
+    transform: scale(1.1);
+}
+
+/* Обновленные стили для футера */
+.footer-logo-container {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.footer-logo {
+    width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.footer-section.brand {
+    max-width: 300px;
+}

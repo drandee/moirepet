@@ -1,0 +1,75 @@
+/* Секция "Почему мы" */
+.why-us {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--background-grad1), var(--background-grad2));
+    position: relative;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.advantage-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-hover);
+}
+
+.advantage-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--background-grad1), var(--primary-light));
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.advantage-card h3 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.advantage-card p {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .advantages-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+        margin: 0 1rem;
+    }
+
+    .advantage-card {
+        padding: 1.5rem;
+    }
+
+    .advantage-icon {
+        font-size: 2rem;
+        width: 70px;
+        height: 70px;
+    }
+}
