@@ -1,9 +1,8 @@
-/* Минималистичный футер */
+/* Простой футер с 3 кружочками */
 footer {
     background: var(--white);
     border-top: 1px solid var(--background-light);
-    color: var(--text-color);
-    padding: 3rem 0 1rem;
+    padding: 2rem 0;
 }
 
 .footer-content {
@@ -11,84 +10,50 @@ footer {
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-}
-
-.footer-brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex: 1;
-    min-width: 300px;
-}
-
-.footer-logo-container {
-    width: 60px;
-    height: 60px;
-    flex-shrink: 0;
+    gap: 3rem;
 }
 
 .footer-logo {
-    width: 100%;
-    height: 100%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--background-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.footer-logo:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     filter: none;
-    opacity: 1;
+    transition: filter 0.3s ease;
 }
 
-.footer-brand p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    margin: 0;
-    line-height: 1.4;
-}
-
-.footer-links {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-}
-
-.footer-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.95rem;
-    font-weight: 500;
-    transition: color 0.3s ease;
-    position: relative;
-}
-
-.footer-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary-color);
-    transition: width 0.3s ease;
-}
-
-.footer-links a:hover {
-    color: var(--primary-color);
-}
-
-.footer-links a:hover::after {
-    width: 100%;
+.footer-logo:hover img {
+    filter: brightness(0) invert(1);
 }
 
 .footer-social {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
 .social-link {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     background: var(--background-light);
     border-radius: 50%;
     display: flex;
@@ -96,16 +61,18 @@ footer {
     justify-content: center;
     transition: all 0.3s ease;
     text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .social-link:hover {
     background: var(--primary-color);
     transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
 }
 
 .social-link img {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
     filter: none;
     transition: filter 0.3s ease;
 }
@@ -114,115 +81,61 @@ footer {
     filter: brightness(0) invert(1);
 }
 
-.footer-bottom {
-    border-top: 1px solid var(--background-light);
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    text-align: center;
-}
-
-.footer-bottom p {
-    color: var(--text-light);
-    font-size: 0.9rem;
-    margin: 0;
-}
-
-/* Адаптивность минималистичного футера */
+/* Адаптивность */
 @media (max-width: 768px) {
     .footer-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 1.5rem;
+        gap: 2rem;
         padding: 0 1rem;
     }
     
-    .footer-brand {
-        flex-direction: column;
-        gap: 0.8rem;
-        min-width: auto;
-    }
-    
-    .footer-logo-container {
+    .footer-logo {
         width: 50px;
         height: 50px;
     }
     
-    .footer-brand p {
-        font-size: 0.9rem;
-    }
-    
-    .footer-links {
-        gap: 1.5rem;
-    }
-    
-    .footer-links a {
-        font-size: 0.9rem;
+    .footer-logo img {
+        width: 32px;
+        height: 32px;
     }
     
     .social-link {
-        width: 35px;
-        height: 35px;
+        width: 50px;
+        height: 50px;
     }
     
     .social-link img {
-        width: 16px;
-        height: 16px;
+        width: 20px;
+        height: 20px;
     }
 }
 
 @media (max-width: 480px) {
     footer {
-        padding: 2rem 0 1rem;
+        padding: 1.5rem 0;
     }
     
     .footer-content {
+        gap: 1.5rem;
         padding: 0 0.5rem;
-        gap: 1rem;
     }
     
-    .footer-brand {
-        gap: 0.6rem;
-    }
-    
-    .footer-logo-container {
+    .footer-logo {
         width: 45px;
         height: 45px;
     }
     
-    .footer-brand p {
-        font-size: 0.85rem;
-    }
-    
-    .footer-links {
-        gap: 1rem;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .footer-links a {
-        font-size: 0.85rem;
-    }
-    
-    .footer-social {
-        gap: 0.8rem;
+    .footer-logo img {
+        width: 28px;
+        height: 28px;
     }
     
     .social-link {
-        width: 32px;
-        height: 32px;
+        width: 45px;
+        height: 45px;
     }
     
     .social-link img {
-        width: 14px;
-        height: 14px;
-    }
-    
-    .footer-bottom {
-        margin-top: 1.5rem;
-        padding-top: 1rem;
-    }
-    
-    .footer-bottom p {
-        font-size: 0.85rem;
+        width: 18px;
+        height: 18px;
     }
 }
