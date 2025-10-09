@@ -57,10 +57,14 @@
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
+    .why-us {
+        padding: 4rem 1rem;
+    }
+    
     .advantages-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
         gap: 1.5rem;
-        margin: 0 1rem;
+        padding: 0 1rem;
     }
 
     .advantage-card {
@@ -71,5 +75,41 @@
         font-size: 2rem;
         width: 70px;
         height: 70px;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.2rem;
+    }
+    
+    .advantage-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .why-us {
+        padding: 3rem 0.5rem;
+    }
+    
+    .advantages-grid {
+        padding: 0 0.5rem;
+    }
+    
+    .advantage-card {
+        padding: 1.2rem;
+    }
+    
+    .advantage-icon {
+        font-size: 1.8rem;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .advantage-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .advantage-card p {
+        font-size: 0.9rem;
     }
 }

@@ -13,3 +13,30 @@
 .footer-section.brand {
     max-width: 300px;
 }
+
+/* Адаптивность футера */
+@media (max-width: 768px) {
+    .footer-logo-container {
+        max-width: 150px;
+        margin: 0 auto 1rem;
+    }
+    
+    .footer-section.brand {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .footer-section.brand p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo-container {
+        max-width: 120px;
+    }
+    
+    .footer-section.brand p {
+        font-size: 0.9rem;
+    }
+}
