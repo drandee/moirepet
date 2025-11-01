@@ -1,19 +1,19 @@
 :root {
-    --primary-color: #4A90E2;
-    --primary-light: #7FB1F1;
-    --primary-dark: #2171CC;
-    --accent-color: #8B62FF;
-    --accent-light: #A894F7;
-    --text-color: #2C3E50;
-    --text-light: #647687;
+    --primary-color: #1E88E5;
+    --primary-light: #60A5FF;
+    --primary-dark: #1155CC;
+    --accent-color: #FF6B6B;
+    --accent-light: #FF9A8A;
+    --text-color: #1F2D3D;
+    --text-light: #65788A;
     --background-light: #F7FAFF;
     --background-grad1: #EEF5FF;
-    --background-grad2: #F0F0FF;
+    --background-grad2: #F4F8FF;
     --white: #ffffff;
     --border-radius: 20px;
     --border-radius-sm: 12px;
-    --box-shadow: 0 10px 30px rgba(74, 144, 226, 0.1);
-    --box-shadow-hover: 0 15px 40px rgba(74, 144, 226, 0.2);
+    --box-shadow: 0 10px 30px rgba(30, 136, 229, 0.08);
+    --box-shadow-hover: 0 15px 40px rgba(30, 136, 229, 0.14);
 }
 
 * {
@@ -122,6 +122,60 @@ body {
 .contact-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(139, 98, 255, 0.3);
+}
+
+/* Кнопка для репетиторов в навигации */
+.tutor-link {
+    padding: 0.55rem 1rem;
+    border-radius: var(--border-radius-sm);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-dark);
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+.tutor-link:hover {
+    background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
+    color: var(--white);
+}
+
+/* Плашка для репетиторов */
+.for-tutors {
+    padding: 3.5rem 1rem;
+    background: linear-gradient(90deg, rgba(30,136,229,0.04), rgba(255,107,107,0.02));
+}
+
+.for-tutors-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.for-tutors-content {
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.for-tutors-content h2 {
+    margin: 0;
+    color: var(--primary-dark);
+}
+
+.for-tutors-content p {
+    margin: 0;
+    color: var(--text-light);
+}
+
+.for-tutors-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.6rem;
 }
 
 /* Мобильное меню */
