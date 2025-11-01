@@ -243,6 +243,7 @@
     .tutor-description {
         font-size: 0.85rem;
         min-height: 3.8em;
+        text-align: center;
     }
     
     .tutor-badge {
