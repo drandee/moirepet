@@ -59,14 +59,25 @@
 
     <main>
         <section class="hero">
+            <div class="geometric-pattern"></div>
+            <div class="theme-illustrations">
+                <div class="illustration illustration-math"></div>
+                <div class="illustration illustration-science"></div>
+            </div>
             <div class="hero-container">
                 <div class="hero-content">
                     <h1 class="hero-title">МойРепет</h1>
                     <h2 class="hero-subtitle">Онлайн-обучение с лучшими репетиторами</h2>
                     <p>Персональная подготовка к ОГЭ и ЕГЭ в интерактивном формате.<br>Учитесь у студентов ведущих вузов, достигайте высоких результатов.</p>
                     <div class="hero-buttons">
-                        <a href="#tutors" class="primary-button">Найти репетитора</a>
-                        <a href="#contacts" class="secondary-button">Получить консультацию</a>
+                        <a href="#tutors" class="primary-button">
+                            Найти репетитора
+                            <span class="button-icon">→</span>
+                        </a>
+                        <a href="#contacts" class="secondary-button">
+                            Получить консультацию
+                            <span class="button-icon">✨</span>
+                        </a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -148,14 +159,23 @@
                         <div class="tutor-image">
                             <img src="андрей.jpg" alt="Андрей - Репетитор по математике" loading="lazy">
                         </div>
+                        <div class="tutor-info-header">
+                            <h3>Андрей</h3>
+                            <div class="tutor-badges">
+                                <span class="tutor-subject">
+                                    <i>📐</i>Математика ЕГЭ
+                                </span>
+                                <span class="tutor-subject">
+                                    <i>📊</i>Профильный
+                                </span>
+                            </div>
+                            <div class="tutor-education">
+                                <i>🎓</i> 3 курс, Мехмат МГУ
+                            </div>
+                        </div>
                         <div class="tutor-badge">98 баллов ЕГЭ</div>
                     </div>
                     <div class="tutor-info">
-                        <h3>Андрей</h3>
-                        <div class="tutor-subject">Математика ЕГЭ</div>
-                        <div class="tutor-education">
-                            3 курс, Мехмат МГУ
-                        </div>
                         <div class="tutor-stats">
                             <div class="stat">
                                 <span class="stat-value">98</span>
@@ -165,11 +185,21 @@
                                 <span class="stat-value">40+</span>
                                 <span class="stat-label">учеников</span>
                             </div>
+                            <div class="stat">
+                                <span class="stat-value">95%</span>
+                                <span class="stat-label">успешность</span>
+                            </div>
                         </div>
                         <p class="tutor-description">Сам сдал ЕГЭ на 98 баллов в 2023 году. Знаю все подводные камни экзамена и современные требования. Объясняю сложное простым языком.</p>
                         <div class="tutor-actions">
-                            <div class="tutor-price">от 800 ₽ / час</div>
-                            <button class="tutor-contact">Связаться</button>
+                            <div class="tutor-price-tag">
+                                <span class="price">от 800 ₽</span>
+                                <span class="period">/ час</span>
+                            </div>
+                            <button class="primary-button tutor-contact">
+                                Связаться
+                                <span class="button-icon">→</span>
+                            </button>
                         </div>
                     </div>
                 </article>
