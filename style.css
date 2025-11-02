@@ -198,7 +198,7 @@ body {
     font-size: 2.5rem;
     color: var(--primary-dark);
     margin-bottom: 3rem;
-    background: linear-gradient(135deg, var(--text-color), var(--primary-dark));
+    background: linear-gradient(135deg, var(--text-color), var(--primary-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -663,7 +663,7 @@ body {
     flex: 1;
     position: relative;
 }
-
+primary-button contact-btn
 .subject-select {
     width: 100%;
     padding: 1rem 1.5rem;
